@@ -4,37 +4,46 @@
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .eisenhewer-matrix-head {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .eisenhewer-matrix-img {
   width: 100%;
 }
+
 .eisenhewer-matrix-head .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
+
   .eisenhewer-matrix-head { 
     text-align: center;
   }
+
 }
+
 .centered-main-page-element {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
+
 .task-row-wrapper {
   display: flex;
 }
+
 .list-todo-comp {
   margin: 0;
   padding: 0px;
@@ -58,10 +67,13 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 #but-total:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
+
 .headers,
 .add-item-lab {
   color: #333;
@@ -217,6 +229,7 @@ button.button-for-del .img-for-del:hover {
 } */
 
 /*пере .edit пробела не должно быть*/
+
 .list-todo-comp #inp-line.edit-mode input[type=text] {
   display: inline-block;
   width: 224px;

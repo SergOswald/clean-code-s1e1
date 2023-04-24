@@ -18,8 +18,9 @@
 }
 
 @media (max-width:768px) {
-.eisenhewer-matrix-head { text-align: center;
-}
+  .eisenhewer-matrix-head { 
+    text-align: center;
+  }
 }
 .centered-main-page-element {
   display: block;

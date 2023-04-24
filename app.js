@@ -18,20 +18,22 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-
+    listItem.id = "inp-line" ;
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
+    // editInput.className="total-inp task";
     //button.edit
     var editButton=document.createElement("button");//edit button
-
+    editButton.id="but-total";
     //button.delete
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
-
+    deleteButtonImg.className = "img-for-del";
+    deleteButton.id="but-total";
     label.innerText=taskString;
     label.className='task';
 
@@ -83,6 +85,8 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
+    // var editInput=listItem.querySelector('total-inp task');
+
     var label=listItem.querySelector("label");
     var editBtn=listItem.querySelector(".button-for-edit-save");
     var containsClass=listItem.classList.contains("edit-mode");
